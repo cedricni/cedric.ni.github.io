@@ -323,6 +323,13 @@ main {
 
 .sidebar.active { max-height: 405px; }
 
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        max-height: none;
+    }
+}
+
+
 .sidebar-info {
   position: relative;
   display: flex;
