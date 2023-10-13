@@ -316,19 +316,12 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 50px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
 .sidebar.active { max-height: 405px; }
-
-@media only screen and (max-width: 768px) {
-    .sidebar {
-        max-height: 20;
-    }
-}
-
 
 .sidebar-info {
   position: relative;
