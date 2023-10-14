@@ -1033,7 +1033,7 @@ main {
   #BLOG
 \*-----------------------------------*/
 
-.blog-posts { margin-bottom: 10px; }
+.blog-posts { margin-bottom: 20px; }
 
 .blog-posts-list {
   display: flex;
@@ -1050,6 +1050,8 @@ main {
   box-shadow: var(--shadow-4);
   border-radius: 16px;
   z-index: 1;
+  margin-bottom: 20px;
+  border-color: antiquewhite;
 }
 
 .blog-post-item > a::before {
@@ -1059,6 +1061,8 @@ main {
   border-radius: inherit;
   background: var(--eerie-black-1);
   z-index: -1;
+  margin-bottom: 20px;
+  border-color: antiquewhite;
 }
 
 .blog-banner-box {
@@ -1066,6 +1070,7 @@ main {
   height: auto;
   border-radius: 12px;
   overflow: auto;
+  border-color: antiquewhite;
 }
 
 .blog-banner-box img {
@@ -1073,6 +1078,7 @@ main {
   height: auto;
   object-fit: cover;
   transition: var(--transition-1);
+  border-color: antiquewhite;
 }
 
 .blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
@@ -1113,6 +1119,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 
