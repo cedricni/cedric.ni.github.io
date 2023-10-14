@@ -1,6 +1,26 @@
 'use strict';
 
+document.getElementById('myForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Prevents default form submission
 
+  var formData = new FormData(this); // 'this' refers to the form element
+
+  // Making an AJAX request
+  fetch('https://formspree.io/f/xqkvwlba', {
+      method: 'POST',
+      body: formData,
+  })
+  .then(response => response.json())  // Parsing the JSON response
+  .then(data => {
+      console.log(data); // Logging data for debugging
+      document.getElementById('formResponse').textContent = "Thanks for your message!"; // Displaying a thank you message
+      e.target.reset(); // Clearing form fields
+  })
+  .catch((error) => {
+      console.error('Error:', error); // Logging errors for debugging
+      document.getElementById('formResponse').textContent = "Oops! Something went wrong."; // Displaying an error message
+  });
+});
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
