@@ -168,7 +168,7 @@ body { background: var(--smoky-black); }
 .sidebar,
 article {
   background: var(--eerie-black-2);
-  border: 1px solid var(--jet);
+  border: 2px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
@@ -317,7 +317,7 @@ main {
 .sidebar {
   margin-bottom: 15px;
   max-height: 150px;
-  overflow: hidden;
+  overflow: visible;
   transition: var(--transition-2);
 }
 
@@ -328,7 +328,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
 .avatar-box {
@@ -1500,7 +1500,20 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
+  .download-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    color: red;
+    border: 1px solid yellow;
+    border-radius: 5px; /* This makes the button corners rounded */
+    text-decoration: none; /* Removes the underline from the link */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-bottom: 30px;
+}
 
+.download-btn:hover {
+    background-color: greenyellow; /* Darker blue color for hover effect */
+}
 
   /**
    * #PORTFOLIO, BLOG
@@ -1752,7 +1765,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * BLOG
    */
 
-  .blog-banner-box { height: 230px; }
+  .blog-banner-box { height: 500px; }
 
 }
 
